@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "C:\\Users\\user\\bps\\atms"
+    ],
+    "allow": [
+      "Bash(wc:*)"
+    ]
+  }
+}
