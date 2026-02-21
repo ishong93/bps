@@ -526,16 +526,16 @@
 	(if env
 	    (dolist (node-env (tms-node-label node))
 	      ;; env와 node-env의 합집합 계산
-	      (setq new-env (union-env env node-env))
-	      (unless (env-nogood? new-env)  ; nogood이면 버림
+	      (setq new-env (union-env env node-env))  ; ← 생성된 새 환경 
+	      (unless (env-nogood? new-env)  ; ← 필터1: nogood이면 버림
 		;; 최소성 검사: 이미 있는 것의 상위집합이면 버리고,
 		;; 부분집합이면 기존 것을 교체
-		(do ((nnew-envs new-envs (cdr nnew-envs)))
-		    ((null nnew-envs) (push new-env new-envs))  ; 중복 없으면 추가
+		(do ((nnew-envs new-envs (cdr nnew-envs)))  ; ← 필터2: new-envs와 비교
+		    ((null nnew-envs) (push new-env new-envs))  ; 살아남으면(중복 없으면) new-envs에 추가
 		  (when (car nnew-envs)
 		    (case (compare-env new-env (car nnew-envs))
-		      ((:EQ :S21) (return nil))       ; 이미 같거나 더 큰 것 → 버림
-		      (:S12 (rplaca nnew-envs nil))))))))) ; 더 작은 것 → 기존 제거
+		      ((:EQ :S21) (return nil))       ; 기존 것이 더 작거나 같음 → 새것 탈락
+		      (:S12 (rplaca nnew-envs nil))))))))) ; 새것이 더 작음 → 기존 것 제거
       (setq envs (delete nil new-envs :TEST #'eq))
       ;; 전건의 label이 비어있어서 교차곱 결과가 비면 → 전체 실패
       (unless envs (return-from weave nil))))
