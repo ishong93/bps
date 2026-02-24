@@ -5,7 +5,11 @@
       "WebFetch(domain:cse.buffalo.edu)",
       "WebFetch(domain:www.csc2.ncsu.edu)",
       "WebFetch(domain:apps.dtic.mil)",
-      "WebFetch(domain:www.semanticscholar.org)"
+      "WebFetch(domain:www.semanticscholar.org)",
+      "Bash(cmd.exe /c:*)",
+      "Bash(echo:*)",
+      "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\jtms\\\\go 2>NUL & mkdir c:\\\\Users\\\\ishong\\\\bps\\\\jtms\\\\java 2>NUL & echo done\")",
+      "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\jtms\\\\scheme\")"
     ]
   }
 }
