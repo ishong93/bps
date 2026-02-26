@@ -2,10 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(wc:*)",
-      "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\atms\\\\cpp\")"
+      "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\atms\\\\cpp\")",
+      "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\atms\\\\C\")"
     ],
     "additionalDirectories": [
-      "C:\\Users\\user\\bps\\atms"
+      "C:\\Users\\user\\bps\\atms",
+      "C:\\Users\\ishong\\bps\\atms"
     ]
   }
 }
