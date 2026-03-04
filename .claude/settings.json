@@ -4,12 +4,20 @@
       "Bash(wc:*)",
       "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\atms\\\\cpp\")",
       "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\atms\\\\C\")",
-      "Read(//c/Users/user/bps/**)"
+      "Read(//c/Users/user/bps/**)",
+      "Bash(dir \"c:\\\\Users\\\\user\\\\bps\\\\ltms\\\\go\"\")",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path ''c:\\\\Users\\\\user\\\\bps\\\\ltms\\\\go''\")",
+      "Bash(/usr/bin/env bash -c 'echo hello')",
+      "Bash(test -d c:/Users/ishong/bps)",
+      "Bash(test -d c:/Users/ishong/bps/ltms)",
+      "Bash(go build ./...)",
+      "Bash(\"C:/Program Files/Go/bin/go\" build -C c:/Users/ishong/bps/ltms/go ./...)"
     ],
     "additionalDirectories": [
       "C:\\Users\\user\\bps\\atms",
       "C:\\Users\\ishong\\bps\\atms",
-      "c:\\Users\\user\\bps\\jtms"
+      "c:\\Users\\user\\bps\\jtms",
+      "c:\\Users\\user\\bps\\ltms"
     ]
   }
 }
