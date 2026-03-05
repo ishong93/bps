@@ -4,12 +4,15 @@
       "Bash(wc:*)",
       "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\atms\\\\cpp\")",
       "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\atms\\\\C\")",
-      "Read(//c/Users/user/bps/**)"
+      "Read(//c/Users/user/bps/**)",
+      "Bash(go build ./...)",
+      "Read(//c/Users/user/go/bin/**)"
     ],
     "additionalDirectories": [
       "C:\\Users\\user\\bps\\atms",
       "C:\\Users\\ishong\\bps\\atms",
-      "c:\\Users\\user\\bps\\jtms"
+      "c:\\Users\\user\\bps\\jtms",
+      "C:\\Users\\user\\bps\\ltms"
     ]
   }
 }
