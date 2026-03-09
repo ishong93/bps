@@ -6,13 +6,16 @@
       "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\atms\\\\C\")",
       "Read(//c/Users/user/bps/**)",
       "Bash(go build ./...)",
-      "Read(//c/Users/user/go/bin/**)"
+      "Read(//c/Users/user/go/bin/**)",
+      "Read(//c/Users/user/AppData/Local/Temp/claude/c--Users-user-bps/tasks/**)",
+      "Bash(sort -k9)"
     ],
     "additionalDirectories": [
       "C:\\Users\\user\\bps\\atms",
       "C:\\Users\\ishong\\bps\\atms",
       "c:\\Users\\user\\bps\\jtms",
-      "C:\\Users\\user\\bps\\ltms"
+      "C:\\Users\\user\\bps\\ltms",
+      "c:\\Users\\user\\bps\\ltms"
     ]
   }
 }
