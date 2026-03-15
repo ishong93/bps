@@ -6,7 +6,10 @@
       "Bash(/c/Windows/System32/cmd.exe /c \"mkdir c:\\\\Users\\\\ishong\\\\bps\\\\atms\\\\C\")",
       "Read(//c/Users/user/bps/**)",
       "Bash(go build ./...)",
-      "Read(//c/Users/user/go/bin/**)"
+      "Read(//c/Users/user/go/bin/**)",
+      "Bash(powershell -c \"Get-Content c:/Users/ishong/bps/ltms/java/CompleteLTMS.java | Measure-Object -Line\")",
+      "Bash(javac -d /tmp/ltms-classes *.java)",
+      "Bash(where javac)"
     ],
     "additionalDirectories": [
       "C:\\Users\\user\\bps\\atms",
